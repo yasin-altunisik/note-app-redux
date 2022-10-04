@@ -1,16 +1,36 @@
 .App {
   background-color: #eaeaea;
-  margin: 0px 30px 0px 30px;
+  margin: 50px 150px 0px 150px;
+  padding: 30px 30px 30px 30px;
+  border-radius: 10%;
 }
 
-h1 {
-  text-align:center;
-}
-
-form {
+#form1 {
   text-align:center;
 }
 
 .text {
   background-color: #b16565;
+}
+
+.ex1 {
+  font-size: xx-large;
+  font-weight: bold;
+  text-align:center;
+}
+
+#input1 {
+  border-radius: 20px;
+  height: 40px;
+  width: 200px;
+  margin: 20px 0 20px 0;
+}
+
+.ex2 {
+  height: 300px;
+  width: 600px;
+  background-color: aqua;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10%;
 }
