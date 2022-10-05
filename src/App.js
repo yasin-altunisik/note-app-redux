@@ -20,14 +20,19 @@ function App() {
         <div>
           <form>
             <label>
-              <input type="text" placeholder="   Enter your note here..." />
+              <input id="input2" type="text" placeholder="   Enter your note here..." />
             </label>
           </form>
         </div>
 
-        <div>
-          <span></span>
-          <span></span>
+        <div id="div1">
+          <span>
+            <span className="colors" id="color1"></span>
+            <span className="colors" id="color2"></span>
+            <span className="colors" id="color3"></span>
+            <span className="colors" id="color4"></span>
+          </span>
+          <span>button</span>
         </div>
       </div>
 
