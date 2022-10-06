@@ -32,7 +32,7 @@ function App() {
             <span className="colors" id="color3"></span>
             <span className="colors" id="color4"></span>
           </span>
-          <span>button</span>
+          <button>button</button>
         </div>
       </div>
 

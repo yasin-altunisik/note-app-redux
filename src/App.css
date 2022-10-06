@@ -48,6 +48,9 @@
 #div1 {
   margin-top: 80px;
   border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .colors {
