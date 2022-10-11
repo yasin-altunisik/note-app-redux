@@ -1,4 +1,5 @@
 import "./App.css";
+import Notes from "./components/Notes";
 
 function App() {
   return (
@@ -34,21 +35,7 @@ function App() {
           <button className="myButton">ADD</button>
         </div>
       </div>
-      <div className="notesDiv">
-        <div className="notes">
-          note 1
-        </div>
-        <div className="notes">
-          note 2
-        </div>
-        <div className="notes">
-          note 3
-        </div>
-        <div className="notes">
-          note 4
-        </div>
-      </div>
-
+      <Notes />
     </div>
   );
 }
