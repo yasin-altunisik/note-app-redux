@@ -1,4 +1,5 @@
 import React from "react";
+import Colors from "./Colors";
 
 function AddNote() {
     return (
@@ -12,12 +13,7 @@ function AddNote() {
             </div>
 
             <div id="div1">
-                <div id="colorsSpan">
-                    <div className="colors" id="color1"></div>
-                    <div className="colors" id="color2"></div>
-                    <div className="colors" id="color3"></div>
-                    <div className="colors" id="color4"></div>
-                </div>
+                <Colors />
                 <button className="myButton">ADD</button>
             </div>
         </div>
