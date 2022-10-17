@@ -6,8 +6,8 @@ function Colors() {
         { id: 2, color: "purple" },
         { id: 3, color: "pink" },
         { id: 4, color: "blue" },
-        { id: 3, color: "orange" },
-        { id: 3, color: "yellow" },
+        { id: 5, color: "orange" },
+        { id: 6, color: "yellow" },
     ]
 
     return (

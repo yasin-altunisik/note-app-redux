@@ -4,7 +4,7 @@ function Search() {
     return (
         <>
             <div className="ex1">
-                <text>NotesApp</text>
+                <p>NotesApp</p>
             </div>
 
             <div id="input3">
