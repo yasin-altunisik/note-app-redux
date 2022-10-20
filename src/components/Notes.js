@@ -10,7 +10,6 @@ function Notes() {
         <div className="notesDiv">
             {textOfNote.map((note) => (
                 <div className="notes" key={note.id}>
-                    <div>{note.noteHeader}</div>
                     <div>{note.noteText}</div>
                 </div>
             ))}
