@@ -14,7 +14,11 @@ const noteSlice = createSlice({
     },
     reducers: {
         addNote: (state, action) => {
-            state.value += action.payload;
+//            console.log(action.payload)
+//            console.log(state.value.length)            
+    //        state.value += { id: state.value.length, noteText: action.payload };
+            state.value.push({id: state.value.length + 1, noteText: action.payload })
+        
         }
     }
 })
