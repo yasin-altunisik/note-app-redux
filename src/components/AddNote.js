@@ -27,7 +27,7 @@ function AddNote() {
 
             <div id="div1">
                 <Colors />
-                <button className="myButton">ADD</button>
+                <button className="myButton" onClick={handleSubmit}>ADD</button>
             </div>
         </div>
     )
