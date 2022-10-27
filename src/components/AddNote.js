@@ -12,6 +12,7 @@ function AddNote() {
     const handleSubmit = (event) => {
         event.preventDefault();
         dispatch(addNote(addedNote))
+        setAddedNote("");
     }
 
     return (
