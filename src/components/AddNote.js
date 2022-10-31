@@ -6,7 +6,6 @@ import { useState } from "react";
 
 function AddNote() {
     const [addedNote, setAddedNote] = useState("");
-
     const dispatch = useDispatch();
 
     const handleSubmit = (event) => {
