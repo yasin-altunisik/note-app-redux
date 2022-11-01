@@ -9,7 +9,7 @@ function Notes() {
     return (
         <div className="notesDiv">
             {textOfNote.map((note) => (
-                <div className="notes" key={note.id}>
+                <div className="notes" key={note.id} style={{backgroundColor: note.noteCardColour}}>
                     <div>{note.noteText}</div>
                 </div>
             ))}

@@ -11,6 +11,10 @@ function AddNote() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        if(addedNote === ""){
+            alert("Please add note!")
+            return
+        }
         dispatch(addNote(addedNote))
         setAddedNote("");
     }

@@ -60,13 +60,16 @@
   height: 40px;
   width: 40px;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .colors:hover {
   box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
 }
 
-.colors:active{
+.colors:active {
   box-shadow: rgb(0, 0, 0) 5px 5px 15px 15px;
 }
 
