@@ -21,8 +21,8 @@ function Colors() {
           style={{ backgroundColor: color.color }}
           onClick={() => {
             let newArr = [...data];
-            if (newArr[color.id - 1].check == true) {
-              newArr[color.id - 1].check = false
+            if (newArr[color.id - 1].check === true) {
+              newArr[color.id - 1].check = false;
             } else {
               newArr[color.id - 1].check = false;
             }
