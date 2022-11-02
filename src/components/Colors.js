@@ -19,15 +19,17 @@ function Colors() {
           className="colors"
           key={color.id}
           style={{ backgroundColor: color.color }}
-          onClick={(color) => {
+          onClick={() => {
             let newArr = [...data];
-            console.log(newArr);
-            newArr[color.id - 1] = {
-              id: color.id,
-              color: "yellow",
-              check: true,
-            };
-            console.log(newArr);
+            if (newArr[color.id - 1].check == true) {
+              newArr[color.id - 1].check = false
+            } else {
+              newArr[color.id - 1].check = false;
+            }
+            //(console.log(newArr[2].check)
+            //newArr[2].check = true;
+            //console.log(newArr[2].check)
+            console.log("onclick")
             setData(newArr);
           }}
         >
