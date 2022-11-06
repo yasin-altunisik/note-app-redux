@@ -2,7 +2,7 @@ import React from "react";
 import { BiCheck } from "react-icons/bi";
 import { useState } from "react";
 
-function Colors() {
+function Colors({ noteColor }) {
   const [data, setData] = useState([
     { id: 1, color: "lightblue", check: true },
     { id: 2, color: "purple", check: false },
@@ -11,6 +11,13 @@ function Colors() {
     { id: 5, color: "orange", check: false },
     { id: 6, color: "yellow", check: false },
   ]);
+
+  let i = 0;
+  for (i = 0; i < data.length; i++) {
+    if (data[i].check === true) {
+      noteColor(data[i].color);
+    }
+  }
 
   return (
     <div id="colorsSpan">
@@ -28,6 +35,7 @@ function Colors() {
             }
 
             newArr[color.id - 1].check = true;
+            noteColor(color.color);
             /*
 newArr[color.id - 1].check === true
 ? (newArr[color.id - 1].check = false)
