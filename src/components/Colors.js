@@ -1,8 +1,10 @@
 import React from "react";
 import { BiCheck } from "react-icons/bi";
 import { useState } from "react";
+import ListData from "../../src/ListData.json";
 
 function Colors({ noteColor }) {
+  /*
   const [data, setData] = useState([
     { id: 1, color: "lightblue", check: true },
     { id: 2, color: "purple", check: false },
@@ -11,6 +13,8 @@ function Colors({ noteColor }) {
     { id: 5, color: "orange", check: false },
     { id: 6, color: "yellow", check: false },
   ]);
+  */
+  const [data, setData] = useState(ListData);
 
   let i = 0;
   for (i = 0; i < data.length; i++) {

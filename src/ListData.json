@@ -1,0 +1,8 @@
+[
+    { "id": 1, "color": "lightblue", "check": true },
+    { "id": 2, "color": "purple", "check": false },
+    { "id": 3, "color": "pink", "check": false },
+    { "id": 4, "color": "blue", "check": false },
+    { "id": 5, "color": "orange", "check": false },
+    { "id": 6, "color": "yellow", "check": false }
+  ]

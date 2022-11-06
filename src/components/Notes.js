@@ -1,13 +1,21 @@
 import React from "react";
-
 import { useSelector } from "react-redux";
 
 function Notes() {
-  const textOfNote = useSelector((state) => state.note.value);
+  const notes = useSelector((state) => state.note.value);
+  const searchBoxText = useSelector((state) => state.note.searchText);
+
+  const filteredNotes = notes.filter((el) => {
+    if (searchBoxText === "") {
+      return el;
+    } else {
+      return el.noteText.toLowerCase().includes(searchBoxText);
+    }
+  });
 
   return (
     <div className="notesDiv">
-      {textOfNote.map((note) => (
+      {filteredNotes.map((note) => (
         <div
           className="notes"
           key={note.id}
