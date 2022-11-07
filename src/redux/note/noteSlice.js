@@ -23,7 +23,6 @@ const noteSlice = createSlice({
     },
     addSearchText: (state, action) => {
       state.searchText = action.payload;
-      console.log(state.searchText);
     },
   },
 });
